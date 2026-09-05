@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# uv / venv
+.venv/
+venv/
+.env
+uv.lock
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Modelos y datos pesados (descargas locales)
+models/
+*.gguf
+*.bin
+*.safetensors
+*.onnx
+
+# Salida OCR (regenerable, puede ser grande)
+outputs/
+outputs_demo/
+outputs_demo2/
+outputs_en_only/
+run_full.log
+translate_opus.log
+
+# PDFs fuente (privados / pesados - descomenta si quieres trackear con LFS)
+# *.pdf
+# REANIMACION NEONATAL CAPI 1-4.pdf
+
+# Temp
+tmp/
+temp/
+*.tmp
+pdf_ocr_*/
+page_*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# HuggingFace cache (si se usa local)
+.cache/

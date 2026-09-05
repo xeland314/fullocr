@@ -1,0 +1,44 @@
+[project]
+name = "fullocr"
+version = "0.1.0"
+description = "Pipeline OCR + traducción basado en baidu/Unlimited-OCR - extrae texto de PDFs escaneados y genera versiones en inglés (original) y español (traducido)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf==1.27.2",
+    "pytesseract==0.3.13",
+    "pillow==12.1.0",
+    "deep-translator==1.11.4",
+    "tqdm==4.67.1",
+    "psutil==7.2.0",
+]
+
+[project.optional-dependencies]
+unlimited = [
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+    "transformers==4.57.1",
+    "matplotlib==3.10.8",
+    "einops==0.8.2",
+    "addict==2.4.0",
+    "easydict==1.13",
+]
+rapidocr = [
+    "rapidocr-onnxruntime==1.4.3",
+]
+local-opus = [
+    "transformers==4.57.1",
+    "sentencepiece==0.2.1",
+    "torch==2.10.0",
+    "ctranslate2==4.8.2",
+]
+local-llama = [
+    "llama-cpp-python==0.3.16",
+    "huggingface-hub==0.35.0",
+]
+
+[project.scripts]
+fullocr = "main:main"
+
+[tool.uv]
+managed = true

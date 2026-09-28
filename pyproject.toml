@@ -17,7 +17,7 @@ dependencies = [
 unlimited = [
     "torch==2.10.0",
     "torchvision==0.25.0",
-    "transformers==4.57.1",
+    "transformers==5.10.1",
     "matplotlib==3.10.8",
     "einops==0.8.2",
     "addict==2.4.0",
@@ -27,7 +27,7 @@ rapidocr = [
     "rapidocr-onnxruntime==1.4.3",
 ]
 local-opus = [
-    "transformers==4.57.1",
+    "transformers==5.10.1",
     "sentencepiece==0.2.1",
     "torch==2.10.0",
     "ctranslate2==4.8.2",
